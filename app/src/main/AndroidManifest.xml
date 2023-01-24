@@ -17,10 +17,29 @@
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.DeeplinkingUsage">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <data
+                    android:host="github.com/fcenesiz"
+                    android:scheme="https" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+
+            <intent-filter>
+                <data
+                    android:host="github.com/fcenesiz"
+                    android:scheme="http" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <action android:name="android.intent.action.VIEW"/>
             </intent-filter>
 
             <meta-data
