@@ -26,7 +26,7 @@
 
             <intent-filter>
                 <data
-                    android:host="github.com/fcenesiz"
+                    android:host="github.com"
                     android:scheme="https" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
@@ -35,7 +35,7 @@
 
             <intent-filter>
                 <data
-                    android:host="github.com/fcenesiz"
+                    android:host="github.com"
                     android:scheme="http" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
